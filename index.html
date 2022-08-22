@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+
+<head>
+    <!--meta tag defines metadata about an HTML-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Curriculum vitae, CV">
+    <meta name="author" content="Ilia Savolainen">
+    <title>Ilia Savolainen</title>
+    <script src="https://kit.fontawesome.com/d1de64e0ad.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Smooth scrolling-->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 500, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a id="Home"></a>
+    <article>
+        <!--Navigation panel-->
+        <div class="head">
+            <div class="nav">
+                <div class="main item"><a href="#Home">Ilia Savolainen</a></div>
+            </div>
+            <div class="nav">
+                <div class="other item"><a href="#Hobbies"><i class="fas fa-hourglass-half"></i> Harrastukset</a>
+                </div>
+                <div class="other item"><a href="#Portfolio"><i class="fas fa-user-graduate"></i> Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <h1>Ilia Savolainen</h1>
+                </header>
+                <!--About me -->
+                <h2><i class="fas fa-user"></i> Yleistä</h2>
+                <section class="content_main">
+                    <aside><img src="images/IMG_E7007.jpg" alt="Foto"></aside>
+                    <p class="content">Kotoisin Venäjältä
+                        <a class="city" href="https://fi.wikipedia.org/wiki/Pietari_(kaupunki)" target="_blank"
+                            title="Wikipedia Pietari (kaupunki)">Pietarista</a>. Olen inkerinsuomalainen.
+                        Muutin äitini kanssa Suomeen 15-vuotiaana syksyllä 2013.
+                        Valmistuin vain 8 luokkaa Venäjällä, keskikoulu valmistuin jo Suomessa,
+                        kesällä 2017 menin opiskelemaan ammattiin kouluun ICT-asentajaksi.
+                        Olen positiivinen, ystävälinen, vastuunalainen, tarkkaavainen, helposti koulutettava, ei
+                        huonoja
+                        tapoja.
+                    </p>
+                </section>
+                <a id="Hobbies"></a>
+                <!--My hobbies -->
+                <h2><i class="fas fa-hourglass-half"></i> Harrastukset</h2>
+                <section class="hobbies">
+                    <p class="content">
+                        <a href="images/computer2.jpg" data-lightbox="Fotos" data-title="Tietokone"><img
+                                src="images/computer2.jpg" alt="Computer"></a> <br>
+                        Kun ensimmäinen tietokone ilmestyi perheelleni,
+                        olin sitten 7-vuotias, tajusin, että haluan ymmärtää tietokoneita
+                        ja tekniikkaa yleensä, olen kiinnostunut kaikesta tietokoneeseen liittyvästä asiasta
+                        (tietokoneen komponenttien kokoaminen, ohjelmoinnista, peleistä)
+                        Kokoin ensimmäisen tietokoneeni itse, jota käytän edelleen. <br>
+                        <a href="images/dog.jpg" data-lightbox="Fotos" data-title="Steffan"><img class="foto"
+                                src="images/dog.jpg" alt="Steffan"></a> <br> <br>
+                        Minulla on koira, sen nimi on Steffan, jonka kanssa kävelen joka päivä. <br> <br>
+                        <a href="images/lake.jpg" data-lightbox="Fotos" data-title="Jyväsjarvi"><img
+                                src="images/lake.jpg" alt="Jyväsjarvi"></a> <br>
+                        Minulla on myös pyörä, jolla ajan Jyväsjärven ympäri. <br> <br> <br> <br>
+                        <a href="images/games.jpg" data-lightbox="Fotos" data-title="Pelit"><img class="foto"
+                                src="images/games.jpg" alt="Games"></a> <br>
+                        Pelaan tietokonepelejä, lähinnä yksinpelien projekteja,
+                        mutta joskus pelaan myös yhteistyöpelejä ystävien kanssa.
+                    </p>
+                </section>
+                <a id="Portfolio"></a>
+                <!--My work experience and skills -->
+                <h2><i class="fas fa-user-graduate"></i> Portfolio</h2>
+                <section class="portfolio">
+                    <div class="block">
+                        <h3>Työkokemus</h3>
+                        <p class="portf">06/2019—07/2019 Mosaiikki ry (verkkosivujen pelit testaus, verkon kokoonpano,
+                            verkkosivusto
+                            testaus,
+                            tietokoneen korjaaminen) <br> <br>
+                            06/2015 — 08/2015 Jyväskylän Jakelut Oy (Jakelutyö)
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h3>Kielitaito</h3>
+                        <p class="portf">
+                            Venäjä: äidinkieli, erittäin hyvä <br>
+                            Suomi: vieras kieli, hyvä <br>
+                            Englanti: toinen vieras kieli, hyvä</p>
+                    </div>
+                    <div class="block">
+                        <h3>Tietotekniikkatiedot</h3>
+                        <p class="portf">Hyvät taidot: <br> MS Office, Word, Excel, Access, Power Point</p>
+                    </div>
+                    <div class="block">
+                        <h3>Kortit:</h3>
+                        <p class="portf">Ensiapu, sähkötyöturvallisuus, tulityökortti, työturvallisuuskortti</p>
+                        <h3>Ajokortti: B</h3>
+                    </div>
+                </section>
+                <!--Study-->
+                <table>
+                    <tr>
+                        <th>Koulutus</th>
+                        <th>Vuosi</th>
+                    </tr>
+                    <tr>
+                        <td>Gradia Jyväskylä <abbr title="Information and communications technology"
+                                style="cursor: pointer;">ICT</abbr> (Tieto- ja tietoliikennetekniikka perustutkinto)
+                            + Lukio, eli kaksoistutkinto</td>
+                        <td>08/2017—05/2020</td>
+                    </tr>
+                    <tr>
+                        <td>Walma Jyväskylä </td>
+                        <td>01/2017—05/2017</td>
+                    </tr>
+                    <tr>
+                        <td>Oksa koulu (Aikuisten perusopetus)</td>
+                        <td>08/2015 – 12/2016</td>
+                    </tr>
+                    <tr>
+                        <td>Palokan peruskoulu Jyväskylä</td>
+                        <td>10/2013—05/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Peruskoulu Pietari</td>
+                        <td>09/2005—5/2013</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            Author: Ilia Savolainen <br>
+            <a href="mailto:iljavasin322@gmail.com"><i class="far fa-envelope"></i> iljavasin322@gmail.com</a>
+        </footer>
+    </article>
+    <script src="js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
